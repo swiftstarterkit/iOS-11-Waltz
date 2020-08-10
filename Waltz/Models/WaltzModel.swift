@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AVFoundation
+import AVKit
 
 class WaltzModel: ObservableObject {
     
