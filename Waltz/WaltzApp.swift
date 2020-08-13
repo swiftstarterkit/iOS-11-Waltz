@@ -16,6 +16,12 @@ struct WaltzApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(model)
+                .onAppear {
+                    UIApplication.shared.isIdleTimerDisabled = true
+                }
+                .onDisappear {
+                    UIApplication.shared.isIdleTimerDisabled = false
+                }
         }
     }
 }
